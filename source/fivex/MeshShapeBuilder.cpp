@@ -342,9 +342,13 @@ static void sortLsb2Hsb(RadixEntry* data, hkUint32 numObjects, RadixEntry* buffe
 
 static int countLeadingZeros32(hkUint32 v) {
     if (v == 0) return 32;
+#ifdef _MSC_VER
     unsigned long idx;
     _BitScanReverse(&idx, v);
     return 31 - (int)idx;
+#else
+    return __builtin_clz(v);
+#endif
 }
 
 static void sortRadix(RadixEntry* data, int n, RadixEntry* buffer) {

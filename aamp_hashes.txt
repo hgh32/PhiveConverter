@@ -1,0 +1,61 @@
+# AAMP CRC32 Hash Dictionary
+# One name per line. Lines starting with # are comments.
+# The CRC32 hash is computed automatically from each name.
+# Add new names here to resolve unknown hashes in AAMP YAML output.
+
+# Structural names (lists/root)
+param_root
+cloth_mesh_list
+collidable_list
+
+# cloth_mesh object indexed names
+cloth_mesh_0
+cloth_mesh_1
+cloth_mesh_2
+cloth_mesh_3
+cloth_mesh_4
+cloth_mesh_5
+cloth_mesh_6
+cloth_mesh_7
+cloth_mesh_8
+cloth_mesh_9
+cloth_mesh_10
+cloth_mesh_11
+cloth_mesh_12
+cloth_mesh_13
+cloth_mesh_14
+cloth_mesh_15
+
+# collidable object indexed names
+collidable_0
+collidable_1
+collidable_2
+collidable_3
+collidable_4
+collidable_5
+collidable_6
+collidable_7
+collidable_8
+collidable_9
+collidable_10
+collidable_11
+collidable_12
+collidable_13
+collidable_14
+collidable_15
+
+# cloth_mesh object parameters
+Name
+BaseBone
+WindPreset
+BoneCorrection
+BoneCorrectionAxisOrder
+Twist
+TwistSwingAxis
+TwistAngleCoef
+TwistMaxAngle
+KeepBoneLength
+Preset
+
+# collidable object parameters
+ForReplace
