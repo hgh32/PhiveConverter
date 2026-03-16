@@ -4,7 +4,7 @@ project(PhiveConverter CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(yaml-cpp REQUIRED)
+add_subdirectory(lib/yaml-cpp)
 
 add_executable(PhiveConverter
     source/main.cpp

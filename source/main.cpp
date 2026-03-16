@@ -284,8 +284,7 @@ bool convertObjToPhive(const std::string& objPath, const std::string& matInfoPat
 int main(int argc, const char** argv) {
     // Auto-load hash dictionary from next to executable
     {
-        std::filesystem::path exePath = std::filesystem::canonical("/proc/self/exe");
-        std::filesystem::path dictPath = exePath.parent_path() / "aamp_hashes.txt";
+        std::filesystem::path dictPath = std::filesystem::current_path() / "aamp_hashes.txt";
         if (std::filesystem::exists(dictPath)) {
             FiveX::AampFile::loadHashDictionary(dictPath.string());
         }
